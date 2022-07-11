@@ -75,8 +75,8 @@ let descricao = document.querySelector('.descricao');
 
 opcoes.forEach((item,index) => {
     item.addEventListener('click', () => {
-        console.log(item.getAttribute('alt').split('-')[0]);
-        destaque.style.backgroundImage = "linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/" + lista[item.getAttribute('alt').split('-')[0]].image + "')";
+        //console.log(item.getAttribute('alt').split('-')[0]);
+        destaque.style.backgroundImage = "linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('./img/" + lista[item.getAttribute('alt').split('-')[0]].image + "')";
         titulo.innerHTML = lista[item.getAttribute('alt').split('-')[0]].title;
         descricao.innerHTML = lista[item.getAttribute('alt').split('-')[0]].sinopse;
         //destaque.style.backgroundImage = "linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/" + item.getAttribute('alt') + ".jpg')";
